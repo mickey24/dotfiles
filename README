@@ -1,0 +1,18 @@
+# How to install (UNIX/Linux)
+
+# Clone dotfiles.
+git clone https://github.com/mickey24/dotfiles.git /path/to/dotfiles
+
+# Create symlinks to dotfiles under the home directory.
+ln -s /path/to/dotfiles/.vimrc $HOME/.vimrc
+ln -s /path/to/dotfiles/.vim $HOME/.vim
+
+# Install Vundle.
+git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+
+# Install plugins.
+vim +BundleInstall +qa
+
+# Make vimproc binary.
+cd $HOME/.vim/bundle/vimproc
+make -f make_unix.mak  # for UNIX/Linux
