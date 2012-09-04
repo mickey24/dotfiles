@@ -56,6 +56,10 @@ nnoremap <silent> <Space>s :<C-u>source $HOME/.vimrc<CR>:echo "source $HOME/.vim
 nnoremap <Space>cd :<C-u>lcd %:p:h<CR>
 nnoremap q <Nop>
 nnoremap <Space>q q
+nnoremap <Space>h <C-w>h
+nnoremap <Space>j <C-w>j
+nnoremap <Space>k <C-w>k
+nnoremap <Space>l <C-w>l
 cnoremap <C-a> <C-b>
 vnoremap < <gv
 vnoremap > >gv
