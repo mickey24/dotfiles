@@ -108,6 +108,11 @@ autocmd MyAutoCmd QuickFixCmdPost vimgrep cwindow
 autocmd MyAutoCmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$")
 \ | execute "normal! g`\"" | endif
 
+" Highlight the cursor line. {{{2
+highlight CursorLine ctermbg=Black cterm=none
+autocmd VimEnter,WinEnter,BufWinEnter,InsertLeave * setlocal cursorline
+autocmd InsertEnter,WinLeave * setlocal nocursorline
+
 
 " Vundle {{{1
 filetype off
