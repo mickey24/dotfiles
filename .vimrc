@@ -140,9 +140,6 @@ let g:errormarker_errorgroup = "ErrorMsg"
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
 
-imap <Tab> <Plug>(neocomplcache_snippets_expand)
-smap <Tab> <Plug>(neocomplcache_snippets_expand)
-
 " Enable omni completion. {{{3
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
