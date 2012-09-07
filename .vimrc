@@ -84,6 +84,10 @@ highlight PmenuThumb ctermfg=LightMagenta ctermbg=LightMagenta guifg=LightMagent
 autocmd MyAutoCmd VimEnter,WinEnter,ColorScheme * highlight UglySpaces term=underline ctermbg=Red guibg=Red
 autocmd MyAutoCmd VimEnter,WinEnter * match UglySpaces /　\|\s\+$/
 
+" File types
+" Arduino source files *.ino
+autocmd MyAutoCmd BufNewFile,BufRead *.ino setlocal filetype=cpp
+
 " Misc {{{1
 " Auto cd {{{2
 autocmd MyAutoCmd BufEnter * lcd %:p:h
