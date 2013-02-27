@@ -133,6 +133,7 @@ Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-ref'
 Bundle 'thinca/vim-visualstar'
 Bundle 'tsukkee/unite-help'
+Bundle 'uarun/vim-protobuf'
 
 " vim-scripts repos
 Bundle 'errormarker.vim'
