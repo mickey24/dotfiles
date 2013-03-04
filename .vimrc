@@ -35,6 +35,7 @@ set showcmd
 set showmode
 set showtabline=2
 set smartcase
+set smartindent
 set splitbelow
 set splitright
 set wildmenu
